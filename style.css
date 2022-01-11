@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Genos:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arsenal, sans-serif;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  padding: 10px;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: Genos, Arsenal, sans-serif;
+  font-weight: 900;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: darkslategray 0 0 15px;
+}
+
+button {
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+  color: rgb(50, 167, 145);
+}
+
+button:hover {
+  box-shadow: darkslategray 0 0 15px;
+  background-color: rgb(216, 241, 216);
+}
+
+@media screen and ( min-width : 540px ) {
+
+  input , button {
+    width: 350px;
+  }
+
+}
+
+@media screen and ( min-width : 1024px ) {
+
+  input , button {
+    width: 250px;
+    padding: 2.5px;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .trybewarts-login {
+    width: auto;
+  }
+
+}
+
+@media screen and ( min-width : 1280px ) {
+
+  input , button {
+    width: 150px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .trybewarts-login {
+    width: auto;
+    flex-direction: row;
+  }
+
+  .trybewarts-header-logo {
+    width: 65px;
+  }
+
+}
