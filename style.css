@@ -29,7 +29,6 @@ body {
   color: white;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  font-family: Genos, Arsenal, sans-serif;
   font-weight: 900;
 }
 
@@ -50,24 +49,23 @@ input {
 
 input:focus {
   outline: none;
-  box-shadow: darkslategray 0 0 15px;
+  box-shadow: darkslategray 0 0 10px;
 }
 
 button {
   border: none;
-  background-color: whitesmoke;
+  background-color: rgb(30, 102, 72);
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
   font-size: 1.5rem;
   font-weight: 600;
   width: 100%;
-  color: rgb(50, 167, 145);
+  color: white;
 }
 
 button:hover {
-  box-shadow: darkslategray 0 0 15px;
-  background-color: rgb(216, 241, 216);
+  box-shadow: darkslategray 0 0 10px;
 }
 
 @media screen and ( min-width : 540px ) {
@@ -82,7 +80,7 @@ button:hover {
 
   input , button {
     width: 250px;
-    padding: 2.5px;
+    padding: 5px;
   }
 
   button {
@@ -104,12 +102,14 @@ button:hover {
 
 @media screen and ( min-width : 1280px ) {
 
-  input , button {
-    width: 150px;
+  input {
+    width: 200px;
     padding: 10px;
   }
 
   button {
+    width: 150px;
+    padding: 10px;
     font-size: 1rem;
   }
 
