@@ -20,7 +20,6 @@ main {
 
 #trybewarts-forms-logo {
   width: 250px;
-  padding: 10px;
 }
 
 #evaluation-form {
@@ -152,6 +151,15 @@ input [ radio ] {
 #box-text-area {
   display: flex;
   flex-direction: column;
+}
+
+#box-btn-enviar {
+  display: flex;
+  justify-content: center;
+}
+
+#submit-btn {
+  width: 100%;
 }
 
 /* ---------- início tela pequena ---------- */
