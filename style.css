@@ -134,6 +134,26 @@ input [ radio ] {
   width: 100%;
 }
 
+#radio-rate {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}
+
+.radio-rate {
+  padding: 2px;
+  margin: 2.5px;
+  align-self: center;
+}
+
+#box-text-area {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ---------- início tela pequena ---------- */
 
 @media screen and ( min-width : 540px ) {
@@ -265,6 +285,17 @@ input [ radio ] {
     flex-direction: row;
     justify-content: space-between;
     padding: 5px;
+  }
+
+  #radio-rate {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .radio-rate {
+    align-self: center;
   }
 
 }
