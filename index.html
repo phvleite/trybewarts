@@ -12,15 +12,61 @@
         <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt="logo trybewarts" srcset="">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form action="" class="trybewarts-login">
-            <input type="email" class="" name="email" placeholder="Email" id="email">
-            <input type="password" class="" name="password" placeholder="Senha" id="password">
+            <input type="email" class="input-header" name="email" placeholder="Email" id="email">
+            <input type="password" class="input-header" name="password" placeholder="Senha" id="password">
             <button type="submit" id="entrar">Entrar</button>
         </form>
     </header>
     <main>
         <form action="" id="evaluation-form">
             <h1>Formulário de Avaliação</h1>
-
+            <div id="input-nome-sobrenome">
+                <input class="input-eva-form" type="text" id="input-name" placeholder="Nome">
+                <input class="input-eva-form" type="text" id="input-lastname" placeholder="Sobrenome">
+            </div>
+            <div id="input-email-casa">
+                <input class="input-eva-form" type="email" id="input-email" placeholder="Email">
+                <div>
+                    <label class="input-eva-form" for="house">Casa</label>
+                    <select class="input-eva-form" name="" id="house">
+                        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                        <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                        <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div id="input-radio-checkbox">
+                <fieldset id="radio-family">
+                    <legend for="" id="label-family">Qual sua família?</legend>    
+                    <input class="radio-family" type="radio" name="family" id="radio-frontend" value="Frontend">
+                    <label class="radio-family" for="radio-frontend">Frontend</label><br>
+                    <input class="radio-family" type="radio" name="family" id="radio-backend" value="Backend">
+                    <label class="radio-family" for="radio-backend">Backend</label><br>
+                    <input class="radio-family" type="radio" name="family" id="radio-fullstack" value="FullStack">
+                    <label class="radio-family" for="radio-fullstack">FullStack</label>
+                </fieldset>
+                <fieldset id="checkbox-content">
+                    <legend for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</legend>    
+                    <div class="op-content">
+                        <input class="radio-family" type="checkbox" name="content" id="hofs" value="HoFs">
+                        <label class="radio-family" for="hofs">HoFs</label><br>
+                        <input class="radio-family" type="checkbox" name="content" id="jest" value="Jest">
+                        <label class="radio-family" for="jest">Jest</label><br>
+                        <input class="radio-family" type="checkbox" name="content" id="promises" value="Promises">
+                        <label class="radio-family" for="promises">Promises</label><br>
+                    </div>
+                    <div class="op-content">
+                        <input class="radio-family" type="checkbox" name="content" id="react" value="React">
+                        <label class="radio-family" for="react">React</label><br>
+                        <input class="radio-family" type="checkbox" name="content" id="sql" value="SQL">
+                        <label class="radio-family" for="sql">SQL</label><br>
+                        <input class="radio-family" type="checkbox" name="content" id="python" value="Python">
+                        <label class="radio-family" for="python">Python</label><br>
+                    </div>
+                </fieldset>
+            </div>
         </form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo da escola trybewarts" srcset="">
     </main>
