@@ -12,6 +12,34 @@ body {
   background-color: gainsboro;
 }
 
+main {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border: solid 1px red;
+}
+
+#trybewarts-forms-logo {
+  width: 250px;
+  border: solid 1px limegreen;
+  padding: 10px;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+  width: 250px;
+  border: solid 1px blue;
+}
+
+#evaluation-form > h1 {
+  font-size: 1.5rem;
+  border: solid 1px orange;
+  text-align: center;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -25,7 +53,7 @@ body {
   margin-bottom: 10px;
 }
 
-.header h1 {
+#trybewarts-header-title {
   color: white;
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -68,6 +96,13 @@ button:hover {
   box-shadow: darkslategray 0 0 10px;
 }
 
+/* #trybewarts-forms-logo {
+  width: 500px;
+  border: solid 1px limegreen;
+} */
+
+/* ---------- início tela pequena ---------- */
+
 @media screen and ( min-width : 540px ) {
 
   input , button {
@@ -75,6 +110,10 @@ button:hover {
   }
 
 }
+
+/* ---------- fim tela pequena ---------- */
+
+/* ---------- início tela média ---------- */
 
 @media screen and ( min-width : 1024px ) {
 
@@ -100,7 +139,17 @@ button:hover {
 
 }
 
+/* ---------- fim tela média ---------- */
+
+/* ---------- início tela grande ---------- */
+
 @media screen and ( min-width : 1280px ) {
+
+  main {
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
   input {
     width: 200px;
@@ -111,6 +160,19 @@ button:hover {
     width: 150px;
     padding: 10px;
     font-size: 1rem;
+  }
+
+  #evaluation-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 675px;
+    padding: 20px;
+    border: solid 1px blue;
+  }
+
+  #trybewarts-forms-logo {
+    height: 500px;
   }
 
   .header {
@@ -130,3 +192,5 @@ button:hover {
   }
 
 }
+
+/* ---------- fim tela grande ---------- */
