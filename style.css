@@ -83,7 +83,7 @@ input:focus [ text ] [ email ] {
   box-shadow: darkslategray 0 0 10px;
 }
 
-button {
+.submit-entrar , .submit-btn {
   border: none;
   background-color: rgb(30, 102, 72);
   border-radius: 5px;
@@ -95,7 +95,19 @@ button {
   color: white;
 }
 
-button:hover {
+.submit-disable {
+  border: none;
+  background-color: rgb(171, 171, 185);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+  color: gainsboro;
+}
+
+.submit-entrar:hover , .submit-btn:hover {
   box-shadow: darkslategray 0 0 10px;
 }
 
@@ -162,6 +174,17 @@ input [ radio ] {
   width: 100%;
 }
 
+#box-radio-agreement {
+  margin: 10px 0;
+}
+
+#footer {
+  background-color: rgb(40, 55, 71);
+  color: rgb(234, 236, 238);
+  padding: 20px;
+  text-align: center;
+}
+
 /* ---------- início tela pequena ---------- */
 
 @media screen and ( min-width : 540px ) {
@@ -217,7 +240,7 @@ input [ radio ] {
     padding: 10px;
   }
 
-  button {
+  .submit-entrar {
     width: 150px;
     padding: 10px;
     font-size: 1rem;
