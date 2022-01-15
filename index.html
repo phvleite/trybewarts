@@ -40,33 +40,37 @@
                 <hr>
                 <div id="input-radio-checkbox">
                     <fieldset id="radio-family">
-                        <div>
-                            <label for="" id="label-family">Qual sua família?</label><br>    
+                        <label for="" id="label-family">Qual sua família?</label>
+                        <div class="box-radio-family">
+                            <input class="radio-family" type="radio" name="family" id="radio-frontend" value="Frontend">
+                            <label class="radio-family" for="radio-frontend">Frontend</label>
                         </div>
-                        <input class="radio-family" type="radio" name="family" id="radio-frontend" value="Frontend">
-                        <label class="radio-family" for="radio-frontend">Frontend</label><br>
-                        <input class="radio-family" type="radio" name="family" id="radio-backend" value="Backend">
-                        <label class="radio-family" for="radio-backend">Backend</label><br>
-                        <input class="radio-family" type="radio" name="family" id="radio-fullstack" value="FullStack">
-                        <label class="radio-family" for="radio-fullstack">FullStack</label>
+                        <div class="box-radio-family">
+                            <input class="radio-family" type="radio" name="family" id="radio-backend" value="Backend">
+                            <label class="radio-family" for="radio-backend">Backend</label>
+                        </div>
+                        <div class="box-radio-family">
+                            <input class="radio-family" type="radio" name="family" id="radio-fullstack" value="FullStack">
+                            <label class="radio-family" for="radio-fullstack">FullStack</label>
+                        </div>
                     </fieldset>
                     <fieldset id="checkbox-content">
-                        <legend for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</legend>    
+                        <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
                         <div class="op-content">
-                            <label class="radio-family" for="hofs">HoFs</label><br>
                             <input class="subject" type="checkbox" name="content" id="hofs" value="HoFs">
-                            <label class="radio-family" for="jest">Jest</label><br>
+                            <label class="subject" for="hofs">HoFs</label><br>
                             <input class="subject" type="checkbox" name="content" id="jest" value="Jest">
-                            <label class="radio-family" for="promises">Promises</label><br>
+                            <label class="subject" for="jest">Jest</label><br>
                             <input class="subject" type="checkbox" name="content" id="promises" value="Promises">
+                            <label class="subject" for="promises">Promises</label><br>
                         </div>
                         <div class="op-content">
-                            <label class="radio-family" for="react">React</label><br>
                             <input class="subject" type="checkbox" name="content" id="react" value="React">
-                            <label class="radio-family" for="sql">SQL</label><br>
+                            <label class="subject" for="react">React</label><br>
                             <input class="subject" type="checkbox" name="content" id="sql" value="SQL">
-                            <label class="radio-family" for="python">Python</label><br>
+                            <label class="subject" for="sql">SQL</label><br>
                             <input class="subject" type="checkbox" name="content" id="python" value="Python">
+                            <label class="subject" for="python">Python</label><br>
                         </div>
                     </fieldset>
                 </div>
