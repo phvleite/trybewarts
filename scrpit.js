@@ -7,12 +7,9 @@ const ckbAgreement = document.getElementById('agreement');
 const submitBtn = document.getElementById('submit-btn');
 const textArea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
-let count = 500;
-counter.innerText = count;
 
-submitBtn.disabled = true;
-
-function entrarEscola() {
+function entrarEscola(event) {
+  event.preventDefault();
   if (inputEmail.value === '' || inputPassword.value === '') {
     alert('Email ou senha inválidos.');
   }
@@ -21,21 +18,13 @@ function entrarEscola() {
   }
 }
 
-function ativaEnviar() {
-  submitBtn.disabled = false;
-  submitBtn.setAttribute('class', 'submit-btn');
-}
-
-function desativarEnviar() {
-  submitBtn.disabled = true;
-  submitBtn.setAttribute('class', 'submit-disable');
-}
-
 function verificaCkbAgreement() {
   if (ckbAgreement.checked) {
-    ativaEnviar();
+    submitBtn.disabled = false;
+    submitBtn.setAttribute('class', 'submit-btn');
   } else {
-    desativarEnviar();
+    submitBtn.disabled = true;
+    submitBtn.setAttribute('class', 'submit-disable');
   }
 }
 
@@ -51,37 +40,18 @@ function alertaCorCounter(valor) {
   }
 }
 
-function verificaTextArea() {
-  console.log(textArea.value);
-  // textArea.clear();
-  // if (textArea.value === ' ') {
-  //   count = 500;
-  // }
-  counter.innerText = count;
-  alertaCorCounter(count);
-}
-
-function atualizaContador(valor) {
-  if (count < 500 && valor > 0) {
-    count += 1;
-  } else {
-    count -= 1;
-    if (count < 0) {
-      count = 0;
-    }
-  }
-  verificaTextArea();
-}
-
-function verificaValorTecla(evento) {
-  const keyValue = evento.keyCode;
-  if (keyValue === 8 && count < 500) {
-    atualizaContador(1);
-  } else if (keyValue >= 33 && keyValue <= 255) {
-    atualizaContador(-1);
-  }
+// Solucão encontrada na branch de Raphael Almeida Martins
+// URL (https://github.com/tryber/sd-019-a-project-trybewarts/blob/raphael-martins-trybewarts/script.js)
+function qtdCaracteres() {
+  counter.innerHTML = 500 - textArea.value.length;
+  alertaCorCounter(counter.innerHTML);
 }
 
 btEntrar.addEventListener('click', entrarEscola);
 ckbAgreement.addEventListener('click', verificaCkbAgreement);
-textArea.addEventListener('keydown', verificaValorTecla);
+textArea.addEventListener('keyup', qtdCaracteres);
+
+window.onload = () => {
+  verificaCkbAgreement();
+  qtdCaracteres();
+};
