@@ -19,92 +19,97 @@
     </header>
     <main>
         <form action="" id="evaluation-form">
-            <h1>Formulário de Avaliação</h1>
-            <div id="input-nome-sobrenome">
-                <input class="input-eva-form" type="text" id="input-name" placeholder="Nome">
-                <input class="input-eva-form" type="text" id="input-lastname" placeholder="Sobrenome">
-            </div>
-            <div id="input-email-casa">
-                <input class="input-eva-form" type="email" id="input-email" placeholder="Email">
-                <div>
-                    <label class="input-eva-form" for="house">Casa</label>
-                    <select class="input-eva-form" name="" id="house">
-                        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                        <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                        <option value="Pytherina" id="pytherina-house">Pytherina</option>
-                    </select>
+            <div id="box-form-evaluation">
+                <h1>Formulário de Avaliação</h1>
+                <div id="input-nome-sobrenome">
+                    <input class="input-eva-form" type="text" id="input-name" placeholder="Nome">
+                    <input class="input-eva-form" type="text" id="input-lastname" placeholder="Sobrenome">
+                </div>
+                <div id="input-email-casa">
+                    <input class="input-eva-form" type="email" id="input-email" placeholder="Email">
+                    <div>
+                        <label class="input-eva-form" for="house">Casa</label>
+                        <select class="input-eva-form" name="" id="house">
+                            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div id="input-radio-checkbox">
+                    <fieldset id="radio-family">
+                        <div>
+                            <label for="" id="label-family">Qual sua família?</label><br>    
+                        </div>
+                        <input class="radio-family" type="radio" name="family" id="radio-frontend" value="Frontend">
+                        <label class="radio-family" for="radio-frontend">Frontend</label><br>
+                        <input class="radio-family" type="radio" name="family" id="radio-backend" value="Backend">
+                        <label class="radio-family" for="radio-backend">Backend</label><br>
+                        <input class="radio-family" type="radio" name="family" id="radio-fullstack" value="FullStack">
+                        <label class="radio-family" for="radio-fullstack">FullStack</label>
+                    </fieldset>
+                    <fieldset id="checkbox-content">
+                        <legend for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</legend>    
+                        <div class="op-content">
+                            <label class="radio-family" for="hofs">HoFs</label><br>
+                            <input class="subject" type="checkbox" name="content" id="hofs" value="HoFs">
+                            <label class="radio-family" for="jest">Jest</label><br>
+                            <input class="subject" type="checkbox" name="content" id="jest" value="Jest">
+                            <label class="radio-family" for="promises">Promises</label><br>
+                            <input class="subject" type="checkbox" name="content" id="promises" value="Promises">
+                        </div>
+                        <div class="op-content">
+                            <label class="radio-family" for="react">React</label><br>
+                            <input class="subject" type="checkbox" name="content" id="react" value="React">
+                            <label class="radio-family" for="sql">SQL</label><br>
+                            <input class="subject" type="checkbox" name="content" id="sql" value="SQL">
+                            <label class="radio-family" for="python">Python</label><br>
+                            <input class="subject" type="checkbox" name="content" id="python" value="Python">
+                        </div>
+                    </fieldset>
+                </div>
+                <hr>
+                <div id="input-radio-rate">
+                    <fieldset id="radio-rate">
+                        <p for="" class="radio-rate" id="label-rate">Como você avalia a Trybewarts?</p>    
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-1" value="1">
+                        <label class="radio-rate" for="radio-rate-1">1</label><br>
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-2" value="2">
+                        <label class="radio-rate" for="radio-rate-2">2</label><br>
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-3" value="3">
+                        <label class="radio-rate" for="radio-rate-3">3</label><br>
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-4" value="4">
+                        <label class="radio-rate" for="radio-rate-4">4</label><br>
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-5" value="5">
+                        <label class="radio-rate" for="radio-rate-5">5</label><br>
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-6" value="6">
+                        <label class="radio-rate" for="radio-rate-6">6</label><br>
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-7" value="7">
+                        <label class="radio-rate" for="radio-rate-7">7</label><br>
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-8" value="8">
+                        <label class="radio-rate" for="radio-rate-8">8</label><br>
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-9" value="9">
+                        <label class="radio-rate" for="radio-rate-9">9</label><br>
+                        <input class="radio-rate" type="radio" name="rate" id="radio-rate-10" value="10">
+                        <label class="radio-rate" for="radio-rate-10">10</label><br>
+                    </fieldset>
+                </div>
+                <div id="box-text-area">
+                    <label class="textarea" for="textearea">Deixe seu comentário:</label>
+                    <textarea class="textarea" name="" id="textarea" cols="50" rows="10" maxlength="500"></textarea>
+                    <div id="counter"></div>
+                </div>
+                <div id="box-radio-agreement">
+                    <label class="radio-agreement" for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+                    <input class="radio-agreement" type="checkbox" name="agreement" id="agreement" value="">
+                </div>
+                <div id="box-btn-enviar">
+                    <button class="submit-disable" type="submit" id="submit-btn">Enviar</button>
                 </div>
             </div>
-            <hr>
-            <div id="input-radio-checkbox">
-                <fieldset id="radio-family">
-                    <legend for="" id="label-family">Qual sua família?</legend>    
-                    <input class="radio-family" type="radio" name="family" id="radio-frontend" value="Frontend">
-                    <label class="radio-family" for="radio-frontend">Frontend</label><br>
-                    <input class="radio-family" type="radio" name="family" id="radio-backend" value="Backend">
-                    <label class="radio-family" for="radio-backend">Backend</label><br>
-                    <input class="radio-family" type="radio" name="family" id="radio-fullstack" value="FullStack">
-                    <label class="radio-family" for="radio-fullstack">FullStack</label>
-                </fieldset>
-                <fieldset id="checkbox-content">
-                    <legend for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</legend>    
-                    <div class="op-content">
-                        <input class="radio-family" type="checkbox" name="content" id="hofs" value="HoFs">
-                        <label class="radio-family" for="hofs">HoFs</label><br>
-                        <input class="radio-family" type="checkbox" name="content" id="jest" value="Jest">
-                        <label class="radio-family" for="jest">Jest</label><br>
-                        <input class="radio-family" type="checkbox" name="content" id="promises" value="Promises">
-                        <label class="radio-family" for="promises">Promises</label><br>
-                    </div>
-                    <div class="op-content">
-                        <input class="radio-family" type="checkbox" name="content" id="react" value="React">
-                        <label class="radio-family" for="react">React</label><br>
-                        <input class="radio-family" type="checkbox" name="content" id="sql" value="SQL">
-                        <label class="radio-family" for="sql">SQL</label><br>
-                        <input class="radio-family" type="checkbox" name="content" id="python" value="Python">
-                        <label class="radio-family" for="python">Python</label><br>
-                    </div>
-                </fieldset>
-            </div>
-            <hr>
-            <div id="input-radio-rate">
-                <fieldset id="radio-rate">
-                    <p for="" class="radio-rate" id="label-rate">Como você avalia a Trybewarts?</p>    
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-1" value="1">
-                    <label class="radio-rate" for="radio-rate-1">1</label><br>
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-2" value="2">
-                    <label class="radio-rate" for="radio-rate-2">2</label><br>
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-3" value="3">
-                    <label class="radio-rate" for="radio-rate-3">3</label><br>
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-4" value="4">
-                    <label class="radio-rate" for="radio-rate-4">4</label><br>
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-5" value="5">
-                    <label class="radio-rate" for="radio-rate-5">5</label><br>
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-6" value="6">
-                    <label class="radio-rate" for="radio-rate-6">6</label><br>
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-7" value="7">
-                    <label class="radio-rate" for="radio-rate-7">7</label><br>
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-8" value="8">
-                    <label class="radio-rate" for="radio-rate-8">8</label><br>
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-9" value="9">
-                    <label class="radio-rate" for="radio-rate-9">9</label><br>
-                    <input class="radio-rate" type="radio" name="rate" id="radio-rate-10" value="10">
-                    <label class="radio-rate" for="radio-rate-10">10</label><br>
-                </fieldset>
-            </div>
-            <div id="box-text-area">
-                <label class="textarea" for="textearea">Deixe seu comentário:</label>
-                <textarea class="textarea" name="" id="textarea" cols="50" rows="10" maxlength="500"></textarea>
-                <div id="counter"></div>
-            </div>
-            <div id="box-radio-agreement">
-                <label class="radio-agreement" for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-                <input class="radio-agreement" type="checkbox" name="agreement" id="agreement" value="">
-            </div>
-            <div id="box-btn-enviar">
-                <button class="submit-disable" type="submit" id="submit-btn">Enviar</button>
-            </div>
+            <div id="user-information"></div>
         </form>
         <div id="box-trybewarts-form-logo">
             <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="logo da escola trybewarts" srcset="">

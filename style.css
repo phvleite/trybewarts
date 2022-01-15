@@ -8,14 +8,11 @@
   font-family: Arsenal, sans-serif;
 }
 
-body {
-  background-color: gainsboro;
-}
-
 main {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  background-color: gainsboro;
 }
 
 #trybewarts-forms-logo {
@@ -28,6 +25,11 @@ main {
   align-content: center;
   padding: 20px;
   width: 250px;
+}
+
+#box-evaluation-form {
+  display: flex;
+  width: 100%;
 }
 
 #evaluation-form > h1 {
@@ -191,15 +193,15 @@ input [ radio ] {
   justify-content: center;
   width: 70px;
   position: absolute;
-  margin-left: 555px;
-  margin-top: 170px;
-  font-size: 1.5rem;
+  margin-left: 130px;
+  margin-top: 190px;
+  font-size: 1rem;
   font-weight: 700;
   background-color: rgb(22, 160, 133);
   box-shadow: darkslategray 0 0 10px;
   color: white;
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 
 /* ---------- início tela pequena ---------- */
@@ -345,6 +347,14 @@ input [ radio ] {
 
   .radio-rate {
     align-self: center;
+  }
+
+  #counter {
+    margin-left: 555px;
+    margin-top: 170px;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 10px;
   }
 
 }
