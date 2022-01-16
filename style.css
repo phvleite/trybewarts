@@ -216,6 +216,11 @@ input [ radio ] {
   border-radius: 5px;
 }
 
+#user-information * {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
 /* ---------- início tela pequena ---------- */
 
 @media screen and ( min-width : 540px ) {

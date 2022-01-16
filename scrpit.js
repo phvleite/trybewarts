@@ -44,21 +44,22 @@ function userFullName() {
   const userFirstName = document.getElementById('input-name');
   const userLastName = document.getElementById('input-lastname');
   const paragraph = document.createElement('p');
-  paragraph.innerHTML = `Nome: ${userFirstName.value} ${userLastName.value}`;
+  const string = `Nome: <em><strong>${userFirstName.value} ${userLastName.value}</strong></em>`;
+  paragraph.innerHTML = string;
   return paragraph;
 }
 
 function userEmail() {
   const email = document.getElementById('input-email');
   const paragraph = document.createElement('p');
-  paragraph.innerHTML = `Email: ${email.value}`;
+  paragraph.innerHTML = `Email: <em><strong>${email.value}</strong></em>`;
   return paragraph;
 }
 
 function userHouse() {
   const house = document.getElementById('house');
   const paragraph = document.createElement('p');
-  paragraph.innerHTML = `Casa: ${house.value}`;
+  paragraph.innerHTML = `Casa: <em><strong>${house.value}</strong></em>`;
   return paragraph;
 }
 
@@ -71,7 +72,7 @@ function userFamily() {
       string = family.value;
     }
   });
-  paragraph.innerHTML = `Família: ${string}`;
+  paragraph.innerHTML = `Família: <em><strong>${string}</strong></em>`;
   return paragraph;
 }
 
@@ -85,7 +86,7 @@ function userTechnologies() {
     }
   });
   string = string.substring(0, string.length - 1);
-  paragraph.innerHTML = `Matérias: ${string}`;
+  paragraph.innerHTML = `Matérias: <em><strong>${string}</strong></em>`;
   return paragraph;
 }
 
@@ -98,14 +99,14 @@ function userEvaluation() {
       string = evaluation.value;
     }
   });
-  paragraph.innerHTML = `Avaliação: ${string}`;
+  paragraph.innerHTML = `Avaliação: <em><strong>${string}</strong></em>`;
   return paragraph;
 }
 
 function userComment() {
   const comment = document.getElementById('textarea');
   const paragraph = document.createElement('p');
-  paragraph.innerHTML = `Observações: ${comment.value}`;
+  paragraph.innerHTML = `Observações: <em><strong>${comment.value}</strong></em>`;
   return paragraph;
 }
 
